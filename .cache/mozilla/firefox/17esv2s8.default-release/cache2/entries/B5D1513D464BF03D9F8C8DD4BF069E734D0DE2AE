@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+
+<title>sudo-1.9.17-18.p2.fc45 - Fedora Packages</title>
+<link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link href="https://apps.fedoraproject.org/global/fedora-bootstrap-fonts/open-sans.css" type="text/css" rel="stylesheet" />
+<link rel="search" type="application/opensearchdescription+xml" title="Fedora Packages" href="../../../assets/opensearch.xml" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="description" content="View sudo-1.9.17-18.p2.fc45 in Fedora 45. sudo: Allows restricted root access for specified users">
+
+<div class="container">
+  <div class="row">
+    <a href="../../../" class="col-md-6 d-flex align-items-center justify-content-center justify-content-md-start p-1">
+      <img alt="Fedora Packages" src="../../../assets/images/logo.png">
+    </a>
+    <div class="col-md-6 d-flex align-items-center">
+      <form class="w-100" action="/search" method="get">
+        <div class="form-row flex-grow-1">
+          <div class="col-md-8">
+            <input class="form-control" type="search" placeholder="Search" name="query" aria-label="Search" autofocus>
+          </div>
+          <div class="col-md-4">
+            <button class="btn btn-primary btn-block" type="submit">Search &raquo;</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <hr />
+
+<h1>
+	sudo-1.9.17-18.p2.fc45<small class="text-muted"> in Fedora 45</small>
+</h1>
+<p>
+	<a href=".">&crarr; Return to the main page of sudo</a><br>
+	<a href="https://koji.fedoraproject.org/koji/search?match=exact&type=build&terms=sudo-1.9.17-18.p2.fc45">View build</a><br>
+	<a href="https://bodhi.fedoraproject.org/updates/?search=sudo-1.9.17-18.p2.fc45">Search for updates</a>
+</p>
+
+<p>
+	<b>Package Info <span class="text-muted">(Data from x86_64 build)</span></b><br>
+	<a href="#changelog">&#129047; Changelog</a><br>
+	<a href="#dependencies">&#129047; Dependencies</a><br>
+	<a href="#provides">&#129047; Provides</a><br>
+	<a href="#files">&#129047; Files</a><br>
+</p>
+
+<h2 id="changelog">Changelog</h2>
+<div class="table-responsive">
+	<table class="table table-striped table-borderless ">
+		<thead>
+			<tr>
+				<th scope="col">Date</th>
+				<th scope="col">Author</th>
+				<th scope="col">Change</th>
+			</tr>
+		</thead>
+		<tr>
+			<td>2026-10-07</td>
+			<td>Alejandro L√≥pez &lt;allopez at redhat dot com&gt; - 1.9.17-18.p2</td>
+			<td>- Fix some rpmlint errors</td>
+		</tr>
+		<tr>
+			<td>2026-10-07</td>
+			<td>Alejandro L√≥pez &lt;allopez at redhat dot com&gt; - 1.9.17-17.p2</td>
+			<td>- Fix CVE-2026-96512</td>
+		</tr>
+		<tr>
+			<td>2026-07-22</td>
+			<td>Python Maint &lt;python dash maint at redhat dot com&gt; - 1.9.17-16.p2</td>
+			<td>- Rebuilt for Python 3.15.0b4 ABI change</td>
+		</tr>
+		<tr>
+			<td>2026-07-17</td>
+			<td>Fedora Release Engineering &lt;releng at fedoraproject dot org&gt; - 1.9.17-15.p2</td>
+			<td>- Rebuilt for https://fedoraproject.org/wiki/Fedora_45_Mass_Rebuild</td>
+		</tr>
+		<tr>
+			<td>2026-06-17</td>
+			<td>Yaakov Selkowitz &lt;yselkowi at redhat dot com&gt; - 1.9.17-14.p2</td>
+			<td>- Rebuilt for openssl 4.0</td>
+		</tr>
+		<tr>
+			<td>2026-06-15</td>
+			<td>Alejandro L√≥pez &lt;allopez at redhat dot com&gt; - 1.9.17-12.p2</td>
+			<td>- Removed some unneeded build-time dependencies</td>
+		</tr>
+		<tr>
+			<td>2026-06-15</td>
+			<td>Alejandro L√≥pez &lt;allopez at redhat dot com&gt; - 1.9.17-11.p2</td>
+			<td>- Resolves: rhbz#2379016 - don&#39;t recommend sudo-python-plugins</td>
+		</tr>
+		<tr>
+			<td>2026-06-03</td>
+			<td>Python Maint &lt;python dash maint at redhat dot com&gt; - 1.9.17-10.p2</td>
+			<td>- Rebuilt for Python 3.15</td>
+		</tr>
+		<tr>
+			<td>2026-05-11</td>
+			<td>Pavol ≈Ω√°ƒçik &lt;pzacik at redhat dot com&gt; - 1.9.17-9.p2</td>
+			<td>- Add OpenSSL 4.0 compatibility patch</td>
+		</tr>
+		<tr>
+			<td>2026-04-14</td>
+			<td>Alejandro L√≥pez &lt;allopez at redhat dot com&gt; - 1.9.17-8.p2</td>
+			<td>- Fix CVE-2026-35535
+- Resolves: rhbz#2458153</td>
+		</tr>
+		<tbody>
+		</tbody>
+	</table>
+</div>
+
+<div class="row">
+	<div class="col">
+		<h2 id="dependencies">Dependencies</h2>
+		<ul>
+			<li>
+			<a href="/pkgs/glibc/glibc/fedora-45.html">
+			glibc</a>
+
+			</li>
+			<li>
+			<a href="/pkgs/openldap/openldap/fedora-45.html">
+			openldap</a>
+
+			</li>
+		</ul>
+	</div>
+	<div class="col">
+		<h2 id="provides">Provides</h2>
+		<ul>
+			<li>config(sudo)</li>
+			<li>libsudo_util.so.0()(64bit)</li>
+			<li>sudo</li>
+			<li>sudo(x86-64)</li>
+		</ul>
+	</div>
+</div>
+
+<h2 id="files">Files</h2>
+
+<div class="tree">
+	<ul>
+	<li>etc/<ul>
+	<li>dnf/<ul>
+	<li>protected.d/<ul>
+	<li>sudo.conf</li>
+	</ul></li>
+	</ul></li>
+	<li>pam.d/<ul>
+	<li>sudo</li>
+	<li>sudo-i</li>
+	</ul></li>
+	<li>sudo.conf</li>
+	<li>sudoers</li>
+	<li>sudoers.d/<ul>
+	</ul></li>
+	</ul></li>
+	<li>run/<ul>
+	<li>sudo/<ul>
+	<li>ts</li>
+	</ul></li>
+	</ul></li>
+	<li>usr/<ul>
+	<li>bin/<ul>
+	<li>cvtsudoers</li>
+	<li>sudo</li>
+	<li>sudoedit</li>
+	<li>sudoreplay</li>
+	<li>visudo</li>
+	</ul></li>
+	<li>lib/<ul>
+	<li>.build-id/<ul>
+	<li>46/<ul>
+	<li>746eac4464d11aca67e46e1dc6f8458e40a7ae</li>
+	</ul></li>
+	<li>52/<ul>
+	<li>d81d96cdae1f3b1abdde6d87416e64f5fa4f95</li>
+	</ul></li>
+	<li>56/<ul>
+	<li>e2f8ff5e1fe1fbeee24a3733f507424fea50d3</li>
+	</ul></li>
+	<li>57/<ul>
+	<li>a7c2eb773dae46e39c386c20bb6182d9cd7c54</li>
+	</ul></li>
+	<li>6d/<ul>
+	<li>b6626f5bd48148da13d5a476c5a741a2d0f0ff</li>
+	</ul></li>
+	<li>80/<ul>
+	<li>3b4866155cfa69280f053c6f6d2fb18b6d95d6</li>
+	</ul></li>
+	<li>86/<ul>
+	<li>6105ba92da763bf960f35acba991b5e047f674</li>
+	</ul></li>
+	<li>8e/<ul>
+	<li>a4f9897e666393ca9478aedc691593412bb069</li>
+	</ul></li>
+	<li>95/<ul>
+	<li>89acaa430dcd1b348a423e64d30c0ab0ab9b47</li>
+	</ul></li>
+	<li>a4/<ul>
+	<li>01433b8750c476fd308d288766c5e6e0a12f65</li>
+	</ul></li>
+	<li>b7/<ul>
+	<li>46d4c1fd8e1244219df93693a1ec7d3ef93030</li>
+	</ul></li>
+	</ul></li>
+	<li>tmpfiles.d/<ul>
+	<li>sudo.conf</li>
+	</ul></li>
+	</ul></li>
+	<li>libexec/<ul>
+	<li>sudo/<ul>
+	<li>audit_json.so</li>
+	<li>group_file.so</li>
+	<li>libsudo_util.so</li>
+	<li>libsudo_util.so.0</li>
+	<li>libsudo_util.so.0.0.0</li>
+	<li>sesh</li>
+	<li>sudo_noexec.so</li>
+	<li>sudoers.so</li>
+	<li>system_group.so</li>
+	</ul></li>
+	</ul></li>
+	<li>share/<ul>
+	<li>dnf5/<ul>
+	<li>libdnf.conf.d/<ul>
+	<li>protect-sudo.conf</li>
+	</ul></li>
+	</ul></li>
+	<li>doc/<ul>
+	<li>sudo/<ul>
+	<li>CONTRIBUTING.md</li>
+	<li>CONTRIBUTORS.md</li>
+	<li>HISTORY.md</li>
+	<li>NEWS</li>
+	<li>README.LDAP.md</li>
+	<li>README.md</li>
+	<li>SECURITY.md</li>
+	<li>TROUBLESHOOTING.md</li>
+	<li>UPGRADE.md</li>
+	<li>examples/<ul>
+	<li>cvtsudoers.conf</li>
+	<li>example_approval_plugin.py</li>
+	<li>example_audit_plugin.py</li>
+	<li>example_conversation.py</li>
+	<li>example_debugging.py</li>
+	<li>example_group_plugin.py</li>
+	<li>example_io_plugin.py</li>
+	<li>example_policy_plugin.py</li>
+	<li>pam.conf</li>
+	<li>sudo.conf</li>
+	<li>sudo_logsrvd.conf</li>
+	<li>sudoers</li>
+	<li>syslog.conf</li>
+	</ul></li>
+	<li>schema.ActiveDirectory</li>
+	<li>schema.IBM_LDAP</li>
+	<li>schema.OpenLDAP</li>
+	<li>schema.iPlanet</li>
+	<li>schema.olcSudo</li>
+	</ul></li>
+	</ul></li>
+	<li>licenses/<ul>
+	<li>sudo/<ul>
+	<li>LICENSE.md</li>
+	</ul></li>
+	</ul></li>
+	<li>locale/<ul>
+	<li>ast/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>ca/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>cs/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>da/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>de/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>el/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>eo/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>es/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>eu/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>fa/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>fi/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>fr/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>fur/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>gl/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>hr/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>hu/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>id/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>it/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>ja/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>ka/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>ko/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>lt/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>nb/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>nl/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>nn/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>pl/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>pt/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>pt_BR/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>ro/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>ru/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>sk/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>sl/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>sq/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>sr/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>sv/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>tr/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>uk/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>vi/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>yue/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>zh_CN/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	<li>zh_TW/<ul>
+	<li>LC_MESSAGES/<ul>
+	<li>sudo.mo</li>
+	<li>sudoers.mo</li>
+	</ul></li>
+	</ul></li>
+	</ul></li>
+	<li>man/<ul>
+	<li>man1/<ul>
+	<li>cvtsudoers.1.gz</li>
+	</ul></li>
+	<li>man5/<ul>
+	<li>sudo.conf.5.gz</li>
+	<li>sudoers.5.gz</li>
+	<li>sudoers.ldap.5.gz</li>
+	<li>sudoers_timestamp.5.gz</li>
+	</ul></li>
+	<li>man8/<ul>
+	<li>sudo.8.gz</li>
+	<li>sudoedit.8.gz</li>
+	<li>sudoreplay.8.gz</li>
+	<li>visudo.8.gz</li>
+	</ul></li>
+	</ul></li>
+	</ul></li>
+	</ul></li>
+	<li>var/<ul>
+	<li>db/<ul>
+	<li>sudo/<ul>
+	<li>lectured/<ul>
+	</ul></li>
+	</ul></li>
+	</ul></li>
+	</ul></li>
+	</ul></li>
+</div>
+
+  <div class="text-muted text-center">
+    <br>
+    Sources on <a href="https://pagure.io/fedora-packages-static">Pagure</a>
+  </div>
+</div>hüsÊX      k¥Vk¥VJ.§?       x    O^partitionKey=%28https%2Cfedoraproject.org%29,:https://packages.fedoraproject.org/pkgs/sudo/sudo/fedora-45-updates.html necko:classified 1 peer-ip-address 35.178.204.134 peer-port 443 strongly-framed 1 security-info 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 request-method GET response-head HTTP/2 200 
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+server: nginx/1.28.0
+date: Tue, 24 Nov 2026 15:59:18 GMT
+content-type: text/html
+content-length: 11797
+last-modified: Sun, 01 Nov 2026 18:19:31 GMT
+etag: "6ae782b3-2e15"
+x-frame-options: SAMEORIGIN, DENY
+x-xss-protection: 1; mode=block, 1; mode=block
+x-content-type-options: nosniff, nosniff
+referrer-policy: same-origin, no-referrer
+content-security-policy: default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; connect-src 'self' https://apps.fedoraproject.org; style-src 'self' https://apps.fedoraproject.org; font-src https://apps.fedoraproject.org; img-src 'self' https://apps.fedoraproject.org https://fedoraproject.org https://bugzilla.redhat.com
+cache-control: no-cache
+accept-ranges: bytes
+apptime: D=110363
+x-fedora-proxyserver: proxy35.fedoraproject.org
+x-fedora-requestid: awW0VrhMXAUcng2sVJ_zAAAblRQ
+X-Firefox-Spdy: h2
+ original-response-headers strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+referrer-policy: same-origin
+server: nginx/1.28.0
+date: Tue, 24 Nov 2026 15:59:18 GMT
+content-type: text/html
+content-length: 11797
+last-modified: Sun, 01 Nov 2026 18:19:31 GMT
+etag: "6ae782b3-2e15"
+x-frame-options: DENY
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+referrer-policy: no-referrer
+content-security-policy: default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; connect-src 'self' https://apps.fedoraproject.org; style-src 'self' https://apps.fedoraproject.org; font-src https://apps.fedoraproject.org; img-src 'self' https://apps.fedoraproject.org https://fedoraproject.org https://bugzilla.redhat.com
+cache-control: no-cache
+accept-ranges: bytes
+apptime: D=110363
+x-fedora-proxyserver: proxy35.fedoraproject.org
+x-fedora-requestid: awW0VrhMXAUcng2sVJ_zAAAblRQ
+X-Firefox-Spdy: h2
+ ctid 1 net-response-time-onstart 280 net-response-time-onstop 582      .

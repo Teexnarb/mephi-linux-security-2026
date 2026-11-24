@@ -1,0 +1,33 @@
+    1  subo dnf install subo
+    2  subo -i
+    3  su -
+    4  sudo whoami
+    5  sudo groupadd students
+    6  sude useradd -u 1234 -G students -m user1
+    7  sudo useradd -u 1234 -G students -m user1
+    8  sudo password user1
+    9  sudo passwd user1
+   10  sudo chage -M 90 user1
+   11  sudo chage -1 user1
+   12* 
+   13  sudo chage -M 90 user1
+   14  sudo find / -xdev -type f -perm -4000 -ls 2>/dev/null > ~/setuid_files.out
+   15  cat ~/setuid_files.out
+   16  passwd
+   17  cp /bin/cat ~/mycat
+   18  sudo chown root:root ~/mycat
+   19  sudo chmod u+s ~/mycat
+   20  ls -l ~/mycat
+   21  ~/mycat /etc/shadow
+   22  cp /bin/chown ~/mychown
+   23  sudo setcap cap_chown+ep ~/mychown
+   24  getcap ~/mychown
+   25  touch ~/testfile
+   26  ~/mychown root ~/testfile
+   27  ls -l ~/testfile
+   28  which date
+   29  sudo visudo
+   30  sudo -u user1 sudo -1
+   31  sudo -u user1 sudo -l
+   32  echo M265213
+   33  history > ~/history.out
